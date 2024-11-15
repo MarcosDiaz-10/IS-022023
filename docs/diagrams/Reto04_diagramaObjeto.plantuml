@@ -1,0 +1,87 @@
+@startuml diagramaObjeto
+
+
+
+object equipo1 {
+    nombre = "Los Campeones"
+    registro = "LCP123"
+}
+
+object entrenador1 {
+    nombre = "Carlos"
+    direccion = "Calle Falsa 123"
+    telefono = 123456789
+    nivel_acreditacion = "Nacional"
+    experiencia = 10
+}
+
+object jugador1 {
+    nombre = "Juan"
+    direccion = "Avenida Siempreviva 742"
+    telefono = 987654321
+    numero = 7
+    capitan: true
+    posicion = "Alero"
+
+}
+
+object jugador2 {
+    nombre = "María"
+    direccion = "Calle Luna 456"
+    telefono = 654321987
+    numero = 12
+    capitan: false
+    posicion = "Centro"
+}
+
+object jugador3 {
+    nombre = "Luis"
+    direccion = "Calle Sol 789"
+    telefono = 321987654
+    numero = 5
+    capitan: false
+    posicion = "Libero"
+}
+
+object jugador4 {
+    nombre = "Ana"
+    direccion = "Calle Estrella 101"
+    telefono = 789456123
+    numero = 10
+    capitan: false
+    posicion = "Ala"
+}
+
+object jugador5 {
+    nombre = "Carlos"
+    direccion = "Calle Mar 202"
+    telefono = 159357284
+    numero = 3
+    capitan: false
+    posicion = "Opuesto"
+}
+
+object jugador6 {
+    nombre = "Sofía"
+    direccion = "Calle Río 303"
+    telefono = 258963147
+    numero = 8
+    capitan: false
+    posicion = "Central"
+}
+
+object juego1 {
+    localidad = "Gimnasio Central"
+    puntuacion = "3-1"
+}
+
+equipo1 -- entrenador1
+equipo1 -- jugador1
+equipo1 -- jugador2
+equipo1 -- jugador3
+equipo1 -- jugador4
+equipo1 -- jugador5
+equipo1 -- jugador6
+equipo1 -- juego1
+
+@enduml
